@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin =  require('mini-css-extract-plugin');
 
+
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -9,7 +10,13 @@ module.exports = {
         filename: 'bundle.js',
     },
     resolve: {
-        extensions: ['.js','.jsx']
+        extensions: ['.js','.jsx'],
+        alias: {
+			// '@components':path.resolve(__dirname, 'src/components/'),
+            '@icons':path.resolve(__dirname, 'src/assets/images/icons/'),
+			'@logos':path.resolve(__dirname, 'src/assets/images/logos/'),
+            '@styles':path.resolve(__dirname, 'src/styles/'),
+        }
     },
     mode:'development',
     module: {
@@ -34,6 +41,15 @@ module.exports = {
                 // /\.(css|scss)$/
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
             },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                  {
+                    loader: 'file-loader',
+                  },
+                ],
+            },
+
         ]
     },
     plugins:[
@@ -52,5 +68,7 @@ module.exports = {
         compress: true,
         port: 8080,
         open: true,
+        hot: false, // optional, but you must not set both hot and liveReload to true
+        liveReload: true
     }
 }

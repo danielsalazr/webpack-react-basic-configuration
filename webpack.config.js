@@ -14,9 +14,15 @@ module.exports = {
     },
     resolve: {
         extensions: ['.js','.jsx'],
+        // alias: {
+        //     '@components': path.resolve(__dirname, 'src/components'),
+        //     '@styles': path.resolve(__dirname, 'src/styles'),
+        // }
         alias: {
-            '@components': path.resolve(__dirname, 'src/components'),
-            '@styles': path.resolve(__dirname, 'src/styles'),
+			// '@components':path.resolve(__dirname, 'src/components/'),
+            '@icons':path.resolve(__dirname, 'src/assets/images/icons/'),
+			'@logos':path.resolve(__dirname, 'src/assets/images/logos/'),
+            '@styles':path.resolve(__dirname, 'src/styles/'),
         }
     },
     mode: 'production',
@@ -41,6 +47,14 @@ module.exports = {
                 test: /\.s?[ac]ss$/,
                 // /\.(css|scss)$/
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                  {
+                    loader: 'file-loader',
+                  },
+                ],
             },
         ]
     },
