@@ -16,6 +16,9 @@ module.exports = {
             '@icons':path.resolve(__dirname, 'src/assets/images/icons/'),
 			'@logos':path.resolve(__dirname, 'src/assets/images/logos/'),
             '@styles':path.resolve(__dirname, 'src/styles/'),
+            '@images': path.resolve(__dirname, 'src/assets/images/'),
+            // '@fonts': path.resolve(__dirname, 'src/assets/fonts'),
+            // '@assets': path.resolve(__dirname, 'src/assets/')
         }
     },
     mode:'development',
@@ -42,8 +45,11 @@ module.exports = {
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
             },
             {
-                test: /\.(png|jpe?g|gif)$/i,
+                test: /\.(png|jpe?g|gif|svg)$/i,
                 use: [
+                    // 'svg-inline-loader',
+                    // '@svgr/webpack',
+                    // 'svg-url-loader',
                   {
                     loader: 'file-loader',
                   },

@@ -13,7 +13,10 @@ function AuthProvider({children}) {
     que verifique el estado de login constanetemente
   */
   const login = ({username}) => {
-    setUser({username})
+    
+    // setUser({username})  // si lo hago asi retorna un objeto username : username.value a auth.user 
+    setUser(username)       // al hacerlo asi retorna solo el valor de username a auth.user
+    
     navigate('/')
   }
 

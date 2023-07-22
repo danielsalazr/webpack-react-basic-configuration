@@ -1,0 +1,127 @@
+$font-header-color: #fff;
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    // position: fixed;
+    position: static;
+    width: -webkit-fill-available;
+    height: fit-content;
+    // background-color: ;
+    background: #fff;
+    // padding: 0 48px;
+    // z-index: 1;
+  }
+
+  .header_contact{
+    display: flex;
+    flex-direction: row;
+    width: -webkit-fill-available;
+    background: $blue-color-2;
+    padding: 16px 48px;
+  }
+
+  // .header-logo{
+  //   height: 52px;
+    
+  // }
+  // .side-navbar {
+  //   width: 220px;
+  //   height: 100%;
+  //   position: fixed;
+  //   margin-left: -300px;
+  //   background-color: #100901;
+  //   transition: 0.5s;
+  // }
+  
+  // .nav-link:active,
+  // .nav-link:focus,
+  // .nav-link:hover {
+  //   background-color: #ffffff26;
+
+  // }
+
+  // .navbar {
+  //   // background-color: #114baf !important;
+  //   max-width: 1140px;
+  //   align-items: center;
+  //   position: fixed;
+  //   width: -webkit-fill-available;
+  //   // height: 70px;
+  //   background-color: #114baf;
+  //   // padding: 0 48px;
+  // }
+
+  .headersup {
+    background: $blue-color-2;
+    padding: 10px 0;
+}
+
+.company_logo {
+  width: 30%;
+}
+
+.header_logo{
+  margin-right: 16px;
+}
+.content_info {
+  // flex: 1;
+  text-align: right;
+  color: $font-header-color;
+  display: flex;
+  width: 30%;
+  
+  flex-direction: row;
+  // align-items: center;
+  align-items: center;
+  justify-content: flex-end;
+  // justify-content: space-around;
+  // flex-wrap: wrap;
+  flex-grow: 1;
+  flex-basis:   auto;
+  height: 30px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-left: 2%;
+}
+
+.info i {
+  font-size: 1.2em;
+  color: $blue-color-2;
+  margin-right: 10px;
+  padding: 2px;
+  background: $font-header-color;
+  border-radius: 7px;
+}
+.info a {
+  color: $font-header-color;
+}
+.info span {
+  color: $font-header-color;
+}
+
+// .content_info {
+//   text-align: right;
+//   color: $font-header-color;
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   justify-content: flex-end;
+  
+// }
+
+.header-container {
+  // flex: 1;
+  // display: flex;
+  position: relative;
+  // position: absolute;
+  height: fit-content;
+  background:#fff;
+  border-bottom: rgba(212,212,212, 1.0) 1px solid ;
+
+}

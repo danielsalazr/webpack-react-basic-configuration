@@ -2,7 +2,48 @@ $base-color : #c6538c;
 $background-page: #ffffff;
 $color: rgba(black, 0.88);
 
+$yellow-color-1: #fac103;
+$yellow-color-2: #f6a409;
+$blue-color-1: #1269b0;
+$blue-color-2: #0b4b95;
+
+
+@import "./components/global.scss";
+@import "./components/sideBarMenu.scss";
+@import "./components/header.scss";
+@import "./components/carousel.scss";
+@import "./components/mainpage.scss";
+// @import "./components/carousel.scss";
+@import "./components/footer.scss";
+@import "./components/sections.scss";
+
+@import "./components/infoSection.scss";
+@import "./components/infoEnterprise.scss";
+@import "./components/counterSection.scss";
+
+// @import "./componentes/perfiles";
+// @import "./componentes/estadisticas";
+// @import "./componentes/ubicaciones";
+
 body{
     background-color:  $background-page;
     color: $color;
 }
+
+a {
+    outline: none !important;
+    text-decoration: none;
+}
+
+
+
+
+$Fuente1: 'Lato', sans-serif;
+$Fuente2: 'Oswald', sans-serif;
+
+// @mixin caja {
+// 	color: $color-primario;
+// 	background-color: $color-claro;
+// 	border-radius: 20px;
+// 	box-shadow: 0px 20px 33px 0px rgba(0,0,0,0.50);
+// }

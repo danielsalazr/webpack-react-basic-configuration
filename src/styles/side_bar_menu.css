@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,9 +32,20 @@
     margin-left: 0;
   }
   
-  /* for main section */
   .active-cont {
     margin-left: 220px;
+  }
+
+  .menuBtn{
+    position: fixed;
+    
+  }
+
+  .header{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: -webkit-fill-available;
   }
   
   #menu-btn {
@@ -48,7 +59,11 @@
     padding: 2px 20px;
   }
   
+  .pageBody{
+    padding-top: 70px;
+  }
+
   li a{
     text-decoration: none;
     color: #fff;
-  }
+  } */
