@@ -1,31 +1,50 @@
 import React from 'react'
+import Carousel from './Carousel'
+import lente1 from '@lentes/gafas-sol.jpg'
+// import '@styles/global.scss'
 
 function MainPage() {
   return (
     <div>
-        <p className='h1'>Dosificando.com</p>
-        <br />
+        {/* <Carousel /> */}
+
+        <p className='h1'>Bienestar Optica</p>
+        
+        {/* <br /> */}
         <p  style={{
-            fontSize : "1.5rem",
-            width: "60%",
+            fontSize : "1rem",
+            // width: "60%",
             textAlign: "justify",
           }}
         >
-          Somos una empresa dedicada a la fabricacion de maquinaria y automatizacion industrial a gran escala,
-          nuestro principal enfoque es permitir a las personas observar y entender su procesos por medio de los datos,
-          recopilandolos y llevandolos a usted a travez de internet o de su red empresarial, para que esto le permita a
-          usted, optimizar sus recursos, mejorar sus procesos e identificar las siuaciones que ocurren en su empresa 
-          que ocasionan que retrasos en su produccion y no son identificables a simple vista, nuestras maquinas le 
-          permitiran a usted, llevar su empresa a un siguiente nivel, conocer cuales son sus tiempos reales de operacion 
-          y cerrar contratos con mas confianza sin que comprometa su patrimonio y la integridad e su empresa arriesgandose 
-          a ser penalizado por multas, y costeando mejor sus operaciones, lo que le ayudara a costear mejor su producto 
-          y ofrecer precios competitivos ante el mercado.
+        
+          Somos una empresaa dedicada a la venta de Lentes para el cuidado de tu vision.
         </p>
+        <hr />
+        <section className='portafolioProductos'>
+          
+          <div className='portafolioProductos__container'>
+          <div>
+            <h4>Protafolio de productos</h4>
+            <p>
+            ¿Estás buscando una forma más elegante y funcional de ver el mundo que te rodea? En nuestra página web, te ofrecemos una amplia gama de lentes de alta calidad que se adaptan a tu estilo y necesidades visuales. Ya sea que busques gafas de sol para añadir un toque de glamour a tu look o lentes de prescripción para una visión perfecta, tenemos la solución perfecta para ti. Navega por nuestra selección de lentes de diseño, desde las últimas tendencias hasta los clásicos atemporales, y descubre cómo puedes mejorar tu visión con estilo. Entra en nuestra página web hoy mismo y experimenta la comodidad de comprar tus lentes en línea, con entrega rápida y garantía de satisfacción. ¡No comprometas tu estilo ni tu visión, elige la excelencia en lentes con nosotros!
+            </p>
+          </div>
+          <figure>
+            <img src={lente1} alt="" />
+          </figure>
+          
+
+          </div>
+
+        </section>
+
+        <hr />
         <p
         className='h1'
           style={{
-            fontSize : "1.8rem",
-            width: "60%",
+            fontSize : "1rem",
+            // width: "60%",
             textAlign: "justify",
           }}
         >

@@ -15,6 +15,7 @@ module.exports = {
 			// '@components':path.resolve(__dirname, 'src/components/'),
             '@icons':path.resolve(__dirname, 'src/assets/images/icons/'),
 			'@logos':path.resolve(__dirname, 'src/assets/images/logos/'),
+            '@lentes':path.resolve(__dirname, 'src/assets/images/lentes/'),
             '@styles':path.resolve(__dirname, 'src/styles/'),
         }
     },
@@ -66,7 +67,7 @@ module.exports = {
         directory: path.join(__dirname, 'dist'),
         },
         compress: true,
-        port: 8080,
+        port: 3080,
         open: true,
         hot: false, // optional, but you must not set both hot and liveReload to true
         liveReload: true

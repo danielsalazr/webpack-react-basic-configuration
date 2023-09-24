@@ -5,6 +5,8 @@ import Compras from '../container/Compras';
 import MainPage from '../components/MainPage';
 import LoginPage from '../container/LoginPage';
 import {AuthProvider} from '../components/Auth';
+// import ''
+
 
 import { HashRouter, Routes, Route } from 'react-router-dom';
 
@@ -16,7 +18,7 @@ function App() {
       
         <AuthProvider>
           <Routes>
-            <Route path='/' element={<LoginPage />} />
+            <Route path='/login' element={<LoginPage />} />
           </Routes>
 
           <Layout>
