@@ -5,6 +5,8 @@ import Compras from '../container/Compras';
 import MainPage from '../components/MainPage';
 import LoginPage from '../container/LoginPage';
 import {AuthProvider} from '../components/Auth';
+import MisionVision from '../container/MisionVision';
+import Brigadas from '../components/Brigadas';
 // import ''
 
 
@@ -26,6 +28,8 @@ function App() {
               <Route path='/' element={<MainPage />} />
               <Route path='/compras' element={<Compras />} />
               <Route path='/ventas' element={<Ventas />} />
+              <Route path='/mision_vision' element={<MisionVision />} />
+              <Route path='/brigadas_empresariales' element={<Brigadas />} />
               <Route path='*' element={<h2>Not found</h2>} />
             </Routes>
           </Layout>

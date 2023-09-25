@@ -19,9 +19,20 @@ const [hideMenu, setHideMenu] = useState(false);
         pathRoute: '/',
     });
     menuData.push({
+        title: 'Mision Vision',
+        icon: 'bx bxs-dashboard',
+        pathRoute: '/mision_vision',
+    });
+    
+    menuData.push({
         title: 'Nuestros Servicios',
         icon: 'bx bx-user-check',
         pathRoute: '/a',
+    });
+    menuData.push({
+        title: 'Brigadas Empresariales',
+        icon: 'bx bxs-dashboard',
+        pathRoute: '/brigadas_empresariales',
     });
     menuData.push({
         title: 'productos',
@@ -85,7 +96,7 @@ const [hideMenu, setHideMenu] = useState(false);
             <div 
                 className="panel-body overflow-auto pageBody" 
             >
-                <Carousel />
+                
                 <div className="contenido">
                     {children}
                 </div>

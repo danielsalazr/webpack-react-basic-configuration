@@ -13,7 +13,7 @@ const Header = (props) => {
   
   return (
     <>
-    <div className='header mb-2'>
+    <div className='header mb-2' id='header'>
       <nav className=" navbar top-navbar">
       
       <a 

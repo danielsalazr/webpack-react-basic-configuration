@@ -16,6 +16,7 @@ module.exports = {
             '@icons':path.resolve(__dirname, 'src/assets/images/icons/'),
 			'@logos':path.resolve(__dirname, 'src/assets/images/logos/'),
             '@lentes':path.resolve(__dirname, 'src/assets/images/lentes/'),
+            '@brigadas':path.resolve(__dirname, 'src/assets/images/brigadas/'),
             '@styles':path.resolve(__dirname, 'src/styles/'),
         }
     },

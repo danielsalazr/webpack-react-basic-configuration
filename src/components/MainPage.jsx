@@ -1,11 +1,14 @@
 import React from 'react'
 import Carousel from './Carousel'
+import PortafolioProductos from './PortafolioProductos'
 import lente1 from '@lentes/gafas-sol.jpg'
 // import '@styles/global.scss'
 
 function MainPage() {
   return (
+    
     <div>
+    <Carousel />
         {/* <Carousel /> */}
 
         <p className='h1'>Bienestar Optica</p>
@@ -21,9 +24,9 @@ function MainPage() {
           Somos una empresaa dedicada a la venta de Lentes para el cuidado de tu vision.
         </p>
         <hr />
-        <section className='portafolioProductos'>
+        <section className='quienesSomos'>
           
-          <div className='portafolioProductos__container'>
+          <div className='quienesSomos__container'>
           <div>
             <h4>Protafolio de productos</h4>
             <p>
@@ -38,10 +41,12 @@ function MainPage() {
           </div>
 
         </section>
+        
 
-        <hr />
+        {/* <hr /> */}
+        <PortafolioProductos />
         <p
-        className='h1'
+        className=''
           style={{
             fontSize : "1rem",
             // width: "60%",
